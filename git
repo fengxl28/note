@@ -1,0 +1,28 @@
+上传远程
+./gradlew uploadArchives
+./gradlew :app:assembleRelease
+./gradlew app:dependencies
+
+adb shell dumpsys activity activities | sed -En -e '/Running activities/,/Run #0/p'
+
+
+ifconfig en0 
+
+cmd:
+
+进入root ： su root
+开启mysql：sudo /usr/local/mysql/support-files/mysql.server start（restart，stop）
+关闭进程：ps aux |grep mysq  ， kill
+
+远程连接：ssh root@118.31.13.28  （Fxl564738）
+mysql 密码：(Qwe123!_)
+
+scp /Users/xiaolong/servicework/springboot-learning-example/springboot-mybatis-redis/target/springboot.jar root@47.99.90.246:/root
+
+nohup java -jar xxx.jar >temp.txt &
+
+GitHub搜索 awesome xxx ， xxx-like
+
+
+
+
