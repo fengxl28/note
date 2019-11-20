@@ -2,6 +2,7 @@
 ./gradlew uploadArchives
 ./gradlew :app:assembleRelease
 ./gradlew app:dependencies
+./gradlew clean --refresh-dependencies
 
 adb shell dumpsys activity activities | sed -En -e '/Running activities/,/Run #0/p'
 
