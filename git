@@ -4,7 +4,11 @@
 ./gradlew app:dependencies
 ./gradlew clean --refresh-dependencies
 
-adb shell dumpsys activity activities | sed -En -e '/Running activities/,/Run #0/p'
+activity堆栈信息: adb shell dumpsys activity activities | sed -En -e '/Running activities/,/Run #0/p'
+
+应用信息：adb shell dumpsys package 包名
+
+fragment stack：adb shell dumpsys activity 包名
 
 
 ifconfig en0 
