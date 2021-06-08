@@ -28,11 +28,6 @@ nohup java -jar xxx.jar >temp.txt &
 GitHub搜索 awesome xxx ， xxx-like
 
 
-安全地回滚远程分支
-1、 git log 找commit ID
-2、 git checkout -b temp <commit ID>
-3、 git merge -s ours master
-4、 git push origin temp:master
 
 
 
